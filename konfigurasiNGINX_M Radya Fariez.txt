@@ -1,5 +1,7 @@
+# rate = rate per minute refresh page
 limit_req_zone $binary_remote_addr zone=one:10m rate=6r/m;
 
+# 3000 is num port NGINX server
 server {
         listen 3000 default_server;
         listen [::]:3000 default_server;
